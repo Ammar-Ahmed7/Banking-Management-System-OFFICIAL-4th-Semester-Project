@@ -68,7 +68,7 @@ public class CustomerList implements Initializable{
         Phone_Col.setCellValueFactory(new PropertyValueFactory<>("Phone_Col"));
 
         try {
-            Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/banking_mangement_system","root","Ammarahmed0347");
+            Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/banking_mangement_system","root","Password123");
             Statement statement = connection.createStatement();
             ResultSet resultSet = statement.executeQuery("select name,DOB,country,gender,nic,accNo,phone,accType from clients");
 

@@ -69,7 +69,7 @@ public class Profile {
     @FXML
     void oneUpdateClicked(ActionEvent event) throws SQLException, ClassNotFoundException {
         String databaseUser = "root";
-        String databasePassword = "Ammarahmed0347";
+        String databasePassword = "Password123";
         String url = "jdbc:mysql://localhost:3306/banking_mangement_system";
         Class.forName("com.mysql.cj.jdbc.Driver");
         Connection con = DriverManager.getConnection(url, databaseUser, databasePassword);
@@ -127,7 +127,7 @@ public class Profile {
     @FXML
     void onesearchClicked(ActionEvent event) throws SQLException, ClassNotFoundException {
         String databaseUser="root";
-        String databasePassword="zamanlew6732";
+        String databasePassword="Password123";
         String url="jdbc:mysql://localhost:3306/banking_mangement_system";
         Class.forName("com.mysql.cj.jdbc.Driver");
         Connection con= DriverManager.getConnection(url,databaseUser,databasePassword);

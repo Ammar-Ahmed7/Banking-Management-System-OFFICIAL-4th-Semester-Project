@@ -69,7 +69,7 @@ public class ManagerLoanApproval implements Initializable {
             loanModel.setStatus(newStatus);
 
                 try {
-                    Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/banking_mangement_system", "root", "Ammarahmed0347");
+                    Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/banking_mangement_system", "root", "Password123");
                     PreparedStatement statement = connection.prepareStatement("UPDATE loan_request SET Status = ? WHERE AccountNumber = ?");
                     statement.setString(1, loanModel.getStatus());
                     statement.setString(2, loanModel.getAccount_no());
@@ -85,7 +85,7 @@ public class ManagerLoanApproval implements Initializable {
         table.setItems(listview);
 
         try {
-            Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/banking_mangement_system", "root", "zamanlew6732");
+            Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/banking_mangement_system", "root", "Password123");
             Statement statement = connection.createStatement();
             ResultSet resultSet = statement.executeQuery("SELECT Name, AccountNumber, NIC, AvailableBalance, ReqAmount, Status FROM loan_request");
 

@@ -64,7 +64,7 @@ public class TransactionHistory implements Initializable {
 
 
         try {
-            Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/banking_mangement_system","root","Ammarahmed0347");
+            Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/banking_mangement_system","root","Password123");
             Statement statement = connection.createStatement();
             ResultSet resultSet = statement.executeQuery("SELECT clients.name, clients.accNo, clients.accType, transaction_list.deposit, transaction_list.withdraw, clients.iniDeposit FROM clients INNER JOIN transaction_list ON clients.accNo = transaction_list.accNo");
 

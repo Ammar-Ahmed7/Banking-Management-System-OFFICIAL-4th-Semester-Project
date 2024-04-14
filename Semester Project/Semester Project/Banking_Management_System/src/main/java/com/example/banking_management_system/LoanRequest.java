@@ -65,7 +65,7 @@ public class LoanRequest {
     @FXML
     void onRequestButtonClicked(ActionEvent event) throws ClassNotFoundException, SQLException {
         String databaseUser="root";
-        String databasePassword="Ammarahmed0347";
+        String databasePassword="Password123";
         String url="jdbc:mysql://localhost:3306/banking_mangement_system";
         Class.forName("com.mysql.cj.jdbc.Driver");
         Connection con= DriverManager.getConnection(url,databaseUser,databasePassword);
@@ -119,7 +119,7 @@ public class LoanRequest {
    @FXML
    void onesearchClicked(ActionEvent event) throws ClassNotFoundException, SQLException {
        String databaseUser = "root";
-       String databasePassword = "zamanlew6732";
+       String databasePassword = "Password123";
        String url = "jdbc:mysql://localhost:3306/banking_mangement_system";
        Class.forName("com.mysql.cj.jdbc.Driver");
        Connection con = DriverManager.getConnection(url, databaseUser, databasePassword);

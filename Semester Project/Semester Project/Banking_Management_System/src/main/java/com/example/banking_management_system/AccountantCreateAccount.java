@@ -67,7 +67,7 @@ public class AccountantCreateAccount {
     @FXML
     void oneRegisterClicked(ActionEvent event) throws ClassNotFoundException, SQLException {
         String databaseUser="root";
-        String databasePassword="Ammarahmed0347";
+        String databasePassword="Password123";
         String url="jdbc:mysql://localhost:3306/banking_mangement_system";
         Class.forName("com.mysql.cj.jdbc.Driver");
         Connection con= DriverManager.getConnection(url,databaseUser,databasePassword);
